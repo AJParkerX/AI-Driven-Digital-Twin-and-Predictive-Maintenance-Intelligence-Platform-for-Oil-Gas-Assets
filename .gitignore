@@ -1,86 +1,60 @@
-# ===============================
-# Python
-# ===============================
+# Python cache files
 __pycache__/
 *.py[cod]
 *$py.class
-*.so
-.Python
+
+# Virtual environments
 env/
 venv/
 .venv/
 ENV/
-env.bak/
-venv.bak/
 
-# ===============================
-# Jupyter
-# ===============================
+# Jupyter notebook cache
 .ipynb_checkpoints/
 
-# ===============================
 # Environment variables / secrets
-# ===============================
 .env
 .env.*
 *.env
 
-# ===============================
 # Logs
-# ===============================
-logs/
 *.log
+logs/
 
-# ===============================
-# OS files
-# ===============================
+# OS junk files
 .DS_Store
 Thumbs.db
 
-# ===============================
-# VSCode
-# ===============================
+# VS Code settings
 .vscode/
 
-# ===============================
-# Data (DO NOT PUSH RAW DATA)
-# ===============================
+# Dataset files (keep folder + readme only)
 data/raw/*
-data/processed/*
 !data/raw/readme.txt
+data/processed/*
 
-# ===============================
-# Model files
-# ===============================
+# DVC temporary files
+.dvc/tmp/
+.dvc/cache/
+
+# Sensitive configs
+configs/metadata.yaml
+
+# Model artifacts
 models/
 *.h5
 *.pt
 *.pth
 *.onnx
-*.joblib
 *.pkl
+*.joblib
 
-# ===============================
-# DVC
-# ===============================
-.dvc/tmp/
-.dvc/cache/
-
-# ===============================
-# Config secrets
-# ===============================
-configs/metadata.yaml
-
-# ===============================
 # Build artifacts
-# ===============================
-dist/
 build/
+dist/
 *.egg-info/
 
-# ===============================
 # Temporary files
-# ===============================
 *.tmp
 *.temp
 *.swp
